@@ -8,7 +8,6 @@
 
 </head>
 <body>
-<script type="text/javascript" src="../JS/check.js"></script>
 <div class="container">
     <div class="panel panel-primary sign">
 
@@ -17,19 +16,21 @@
         </div>
 
         <div class="text-center">
-            用户名：<input type="text" class="user" required="required"/>
+            用户名：<input type="text" id="user" required="required"/>
         </div>
 
         <div class="text-center">
-            密　码：<input type="password" class="password" required="required"/>
+            密　码：<input type="password" id="password" required="required"/>
         </div>
         <div class="text-center">
-            <button type="submit" class="btn btn-primary" onclick="checkUser()">登陆</button>
+           <button class="btn btn-primary" onclick="checkUser()">登陆</button>
         </div>
 
     </div>
 
 </div>
+
+<script type="text/javascript" src="../JS/check.js"></script>
 
 </body>
 </html>
