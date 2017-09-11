@@ -11,8 +11,8 @@
 <body>
 <div class="header">
     <div class="row">
-        <div class="font col-lg-9">TTMS</div>
-        <div class="signState col-lg-3">
+        <div class="font col-md-9">TTMS</div>
+        <div class="signState col-md-3">
             <i class="fa fa-user-circle"></i>
             <a href="#">管理员 |</a>
             <a href="signIn.html">登出</a>
@@ -25,14 +25,15 @@
 <div class="container-fluid">
 
     <div class="row">
-        <div class="col-lg-3">
+        <div class="col-md-3">
             <ul class="nav nav-pills nav-stacked">
-                <li><a href="studio.html">演出厅管理</a></li>
+                <li class="active"><a href="studio.html">演出厅管理</a></li>
                 <li><a href="#">用户管理</a></li>
+                <li><a href="#">座位管理</a></li>
             </ul>
         </div>
 
-        <div class="col-lg-9">
+        <div class="col-md-9">
             <input type="text" class="select" placeholder="    请输入演出厅名称">
             <a href="#"><big><i class="fa fa-search"></i></big></a>
             <div class="tableLoaction">
@@ -71,18 +72,31 @@
                         <td>正常使用</td>
                         <td><a href="#">编辑</a></td>
                     </tr>
-                    <tr>
+                    <tr class="warning">
                         <td>3号厅</td>
                         <td>12</td>
                         <td>10</td>
                         <td>120</td>
                         <td>3D</td>
+                        <td>禁用</td>
+                        <td><a href="#">编辑</a></td>
+                    </tr>
+                    <tr>
+                        <td>4号厅</td>
+                        <td>11</td>
+                        <td>10</td>
+                        <td>110</td>
+                        <td>普通厅</td>
                         <td>正常使用</td>
                         <td><a href="#">编辑</a></td>
                     </tr>
                     </tbody>
                 </table>
             </div>
+            <button type="button" class="btn btn-default btn-lg">
+                <span class="glyphicon glyphicon-plus"></span> 添加演出厅
+            </button>
+
         </div>
     </div>
 

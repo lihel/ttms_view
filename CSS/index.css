@@ -18,6 +18,8 @@
     padding-top: 5%;
 }
 
+/*studio*/
+
 .font {
     font-size: 3em;
     text-align: center;
@@ -31,6 +33,7 @@
 
 .select {
     margin-top: 4%;
+    margin-left: 25%;
     border-radius: 15px;
     width: 30%;
 }
