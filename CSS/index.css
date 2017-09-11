@@ -8,7 +8,7 @@
     width: 35%;
 }
 
-.butt {
+.signbutt {
     width: 50%;
     margin: 0 auto;
     padding: 5%;
@@ -16,4 +16,25 @@
 
 .pass {
     padding-top: 5%;
+}
+
+.font {
+    font-size: 3em;
+    text-align: center;
+    margin-top: 1%;
+}
+
+.signState {
+    font-size: large;
+    margin-top: 2%;
+}
+
+.select {
+    margin-top: 4%;
+    border-radius: 15px;
+    width: 30%;
+}
+
+.tableLoaction{
+    margin-top: 8%;
 }

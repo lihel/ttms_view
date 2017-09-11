@@ -5,26 +5,84 @@
     <title>studio</title>
     <link rel="stylesheet" href="../CSS/bs.css">
     <link rel="stylesheet" href="../CSS/index.css">
+    <link href="../font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 
 <body>
+<div class="header">
+    <div class="row">
+        <div class="font col-lg-9">TTMS</div>
+        <div class="signState col-lg-3">
+            <i class="fa fa-user-circle"></i>
+            <a href="#">管理员 |</a>
+            <a href="signIn.html">登出</a>
+        </div>
+    </div>
+</div>
 
+<hr/>
 
 <div class="container-fluid">
 
     <div class="row">
-        <div class="col-md-3">
+        <div class="col-lg-3">
             <ul class="nav nav-pills nav-stacked">
-                <li class="active"><a href="studio.html">演出厅管理</a></li>
+                <li><a href="studio.html">演出厅管理</a></li>
                 <li><a href="#">用户管理</a></li>
             </ul>
         </div>
 
-        <div class="col-md-9">
-            <ul class="nav nav-pills nav-stacked">
-                <li class="active"><a href="studio.html">演出厅管理</a></li>
-                <li><a href="#">用户管理</a></li>
-            </ul>
+        <div class="col-lg-9">
+            <input type="text" class="select" placeholder="    请输入演出厅名称">
+            <a href="#"><big><i class="fa fa-search"></i></big></a>
+            <div class="tableLoaction">
+
+
+                <table class="table table-hover">
+                    <thead>
+                    <tr>
+                        <th>演出厅名称</th>
+                        <th>座位行数</th>
+                        <th>座位列数</th>
+                        <th>座位总数</th>
+                        <th>演出厅类型</th>
+                        <th>演出厅状态</th>
+                        <th>编辑</th>
+
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>1号厅</td>
+                        <td>12</td>
+                        <td>10</td>
+                        <td>120</td>
+                        <td>3D</td>
+                        <td>正常使用</td>
+                        <td><a href="#">编辑</a></td>
+
+                    </tr>
+                    <tr>
+                        <td>2号厅</td>
+                        <td>11</td>
+                        <td>10</td>
+                        <td>110</td>
+                        <td>普通厅</td>
+                        <td>正常使用</td>
+                        <td><a href="#">编辑</a></td>
+                    </tr>
+                    <tr>
+                        <td>3号厅</td>
+                        <td>12</td>
+                        <td>10</td>
+                        <td>120</td>
+                        <td>3D</td>
+                        <td>正常使用</td>
+                        <td><a href="#">编辑</a></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </div>
 

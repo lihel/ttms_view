@@ -1,6 +1,7 @@
 /**
  * Created by lmy on 17-9-9.
  */
+
 let user = "root", password = "123456";
 
 let checkUser = ()=> {
