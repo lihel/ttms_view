@@ -8,6 +8,10 @@
     width: 35%;
 }
 
+.header {
+    border: groove;
+}
+
 .signbutt {
     width: 50%;
     margin: 0 auto;
@@ -21,14 +25,17 @@
 /*studio*/
 
 .font {
-    font-size: 3em;
+    font-size: 3.5em;
     text-align: center;
     margin-top: 1%;
+    color: rgba(31, 45, 178, 0.8);
+    text-shadow: 0 -1px 1px #FFF, -1px 0 1px #FFF, 1px 0 1px #000;
 }
 
 .signState {
     font-size: large;
     margin-top: 2%;
+
 }
 
 .select {
@@ -38,6 +45,19 @@
     width: 30%;
 }
 
-.tableLoaction{
+.tableLoaction {
     margin-top: 8%;
+}
+
+/*user*/
+
+.tableUser {
+    margin-top: 6%;
+}
+
+.page {
+    float: left;
+    position: relative;
+    left: 30%;
+
 }
