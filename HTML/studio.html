@@ -10,6 +10,9 @@
 
 <body>
 
+<script type="text/javascript" src="../JS/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="../JS/popDialog.js"></script>
+
 
 <div class="header">
     <div class="row">
@@ -30,7 +33,6 @@
         <div class="col-md-3">
             <ul class="nav nav-pills nav-stacked">
                 <li class="active"><a href="studio.html">演出厅管理</a></li>
-
                 <li><a href="user.html">用户管理</a></li>
                 <li><a href="#">座位管理</a></li>
             </ul>
@@ -96,7 +98,8 @@
                     </tbody>
                 </table>
             </div>
-            <button type="button" class="btn btn-primary btn-lg" id="addUser">
+            <button data-show-layer="hw-layer" role="button"
+                    class="btn btn-primary btn-lg show-layer" id="addUser">
                 <span class="glyphicon glyphicon-plus"></span> 添加演出厅
             </button>
 
@@ -104,40 +107,45 @@
     </div>
 
 </div>
-<!--class="modal fade"  tabindex="-1"-->
-<div role="dialog">
-    <div class="modal-dialog" role="document">
+
+<div class="hw-overlay" id="hw-layer">
+    <div class="hw-layer-wrap">
         <div class="modal-content">
             <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
-                        aria-hidden="false">×</span></button>
+                <button type="button" class="close hwLayer-close" data-dismiss="modal">×</button>
                 <h4 class="modal-title" id="myModalLabel">增加演出厅</h4>
             </div>
             <div class="modal-body">
                 <div class="form-group">
-                    <label for="txt_departmentname">演出厅名称</label>
-                    <input type="text" name="txt_departmentname" class="form-control" id="txt_departmentname"
-                           placeholder="演出厅名称">
+                    <label for="studioName">演出厅名称</label>
+                    <input type="text" class="form-control" placeholder="演出厅名称" id="studioName">
                 </div>
                 <div class="form-group">
-                    <label for="txt_parentdepartment">座位行数</label>
-                    <input type="text" name="txt_parentdepartment" class="form-control" id="txt_parentdepartment"
-                           placeholder="座位行数">
+                    <label for="row">座位行数</label>
+                    <input type="text" class="form-control" placeholder="座位行数" id="row">
                 </div>
                 <div class="form-group">
-                    <label for="txt_departmentlevel">座位列数</label>
-                    <input type="text" name="txt_departmentlevel" class="form-control" id="txt_departmentlevel"
-                           placeholder="座位列数">
+                    <label for="col">座位列数</label>
+                    <input type="text" class="form-control" placeholder="座位列数" id="col">
                 </div>
                 <div class="form-group">
-                    <label for="txt_statu">演出厅级别</label>
-                    <input type="text" name="txt_statu" class="form-control" id="txt_statu">
+                    <label for="statu">演出厅级别</label>
+                    <input type="text" name="txt_statu" class="form-control" id="statu">
                 </div>
+
+                <select class="form-control">
+                    <option> 普通厅</option>
+                    <option>3D厅</option>
+                    <option>VIP厅</option>
+                </select>
+
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">关闭
+                <button type="button" class="btn btn-default hwLayer-cancel" data-dismiss="modal"><i
+                        class="fa fa-remove "></i>关闭
                 </button>
-                <button type="button" id="btn_submit" class="btn btn-primary" data-dismiss="modal">保存
+                <button type="button" id="btn_submit" class="btn btn-primary hwLayer-ok" data-dismiss="modal"><i
+                        class="fa fa-save"></i> 保存
                 </button>
             </div>
         </div>

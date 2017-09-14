@@ -16,3 +16,4 @@ let checkUser = ()=> {
         self.location='signIn.html';
     }
 }
+
