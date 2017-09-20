@@ -70,40 +70,31 @@
 
     <script type="text/javascript">
 
-        var price = 100; //电影票价
-
         $(document).ready(function () {
-
-            var $cart = $('#seats_chose'), //座位区
-
-                    $tickects_num = $('#tickects_num'), //票数
-
-                    $total_price = $('#total_price'); //票价总额
-
 
             var sc = $('#seat_area').seatCharts({
 
                 map: [//座位结构图 a 代表座位; 下划线 "_" 代表过道
 
-                    'cccccccccc',
+                    'cccccccccccccc',
 
-                    'cccccccccc',
+                    'cccccccccccccc',
 
-                    '__________',
+                    '______________',
 
-                    'cccccccccc',
+                    'cccccccccccccc',
 
-                    'cccccccccc',
+                    'cccccccccccccc',
 
-                    'cccccccccc',
+                    'cccccccccccccc',
 
-                    'cccccccccc',
+                    'cccccccccccccc',
 
-                    'cccccccccc',
+                    'cccccccccccccc',
 
-                    'cccccccccc',
+                    'cccccccccccccc',
 
-                    'cccccccccc'
+                    'cccccccccccccc'
 
                 ],
 
@@ -125,59 +116,22 @@
 
                     items: [
 
-                        ['c', 'available', '可选座'],
+                        ['c', 'available', '正常'],
 
-                        ['c', 'unavailable', '已售出']
+                        ['c', 'selected', '损坏']
 
                     ]
 
-                },
-
-                click: function () {
-
-                    if (this.status() == 'available') { //若为可选座状态，添加座位
-
-                        $('<li>' + (this.settings.row + 1) + '排' + this.settings.label + '座</li>')
-
-                                .attr('id', 'cart-item-' + this.settings.id)
-
-                                .data('seatId', this.settings.id)
-
-                                .appendTo($cart);
-
-
-
-                        return 'selected';
-
-                    } else if (this.status() == 'selected') { //若为选中状态
-
-                        return 'available';
-
-                    } else if (this.status() == 'unavailable') { //若为已售出状态
-
-                        return 'unavailable';
-
-                    } else {
-
-                        return this.style();
-
-                    }
-
                 }
-
             });
 
             //设置已损坏的座位
 
-            sc.get(['1_3', '1_4', '3_4', '4_5', '4_6', '6_7', '6_8']).status('selected');
-
+            sc.get(['1_3', '1_4', '1_5', '4_5', '4_6', '6_7', '6_8']).status('selected');
 
         });
 
-
     </script>
-
-
 
 </div>
 </body>
