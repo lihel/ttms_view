@@ -3,12 +3,16 @@
  */
 function editStudio(r) {
 
-    let sName = document.getElementById('studioTable').rows[r].cells[0].innerHTML;
+    let sN = document.getElementById('studioTable').rows[r].cells[0].innerHTML;
     let sRow = document.getElementById('studioTable').rows[r].cells[1].innerHTML;
     let sCol = document.getElementById('studioTable').rows[r].cells[2].innerHTML;
     let sType = document.getElementById('studioTable').rows[r].cells[4].innerHTML;
     let sStatus = document.getElementById('studioTable').rows[r].cells[5].innerHTML;
-    alert(sType);
+    // alert(sName);
+    $("#sName").val(sN);
+    $("#srow").val(sRow);
+    $("#scol").val(sCol);
+    $("#stype").val(sType);
 
 }
 
