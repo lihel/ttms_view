@@ -251,7 +251,6 @@ span.seatCharts-legendDescription {
 #seats_chose {
     max-height: 150px;
     overflow-y: auto;
-    overflow-x: none;
     width: 200px;
 }
 

@@ -33,105 +33,40 @@
         </div>
 
 
-    <div class="col-md-9">
+        <div class="col-md-9">
 
-        <h2 class="title">管理座位</h2>
+            <h2 class="title">管理座位</h2>
 
-        <div class="demo clearfix">
+            <div class="demo clearfix">
 
-            <!---左边座位列表----->
+                <!---左边座位列表----->
 
-            <div id="seat_area">
+                <div id="seat_area">
 
-                <div class="front">屏幕</div>
+                    <div class="front">屏幕</div>
+
+                </div>
+
+                <!---右边----->
+
+                <div class="booking_area">
+
+                    <input type="button" class="btn btn-primary" value="保存更改" onclick="saveSeatStatus()">
+                    <div id="legend"></div>
+
+                </div>
 
             </div>
-
-            <!---右边选座信息----->
-
-            <div class="booking_area">
-
-               <!-- <p>座位：</p>
-
-                <ul id="seats_chose"></ul>-->
-
-                <div id="legend"></div>
-
-            </div>
-
         </div>
-    </div>
 
     </div>
+
 
     <script src="../JS/jquery-1.11.1.min.js"></script>
 
     <script type="text/javascript" src="../JS/jquery.seat-charts.min.js"></script>
 
-    <script type="text/javascript">
-
-        $(document).ready(function () {
-
-            var sc = $('#seat_area').seatCharts({
-
-                map: [//座位结构图 a 代表座位; 下划线 "_" 代表过道
-
-                    'cccccccccccccc',
-
-                    'cccccccccccccc',
-
-                    '______________',
-
-                    'cccccccccccccc',
-
-                    'cccccccccccccc',
-
-                    'cccccccccccccc',
-
-                    'cccccccccccccc',
-
-                    'cccccccccccccc',
-
-                    'cccccccccccccc',
-
-                    'cccccccccccccc'
-
-                ],
-
-                naming: {//设置行列等信息
-
-                    top: false, //不显示顶部横坐标（行）
-
-                    getLabel: function (character, row, column) { //返回座位信息
-
-                        return column;
-
-                    }
-
-                },
-
-                legend: {//定义图例
-
-                    node: $('#legend'),
-
-                    items: [
-
-                        ['c', 'available', '正常'],
-
-                        ['c', 'selected', '损坏']
-
-                    ]
-
-                }
-            });
-
-            //设置已损坏的座位
-
-            sc.get(['1_3', '1_4', '1_5', '4_5', '4_6', '6_7', '6_8']).status('selected');
-
-        });
-
-    </script>
+    <script type="text/javascript" src="../JS/seatStatus.js"></script>
 
 </div>
 </body>
