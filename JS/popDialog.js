@@ -8,11 +8,11 @@ function editStudio(r) {
     let sCol = document.getElementById('studioTable').rows[r].cells[2].innerHTML;
     let sType = document.getElementById('studioTable').rows[r].cells[4].innerHTML;
     let sStatus = document.getElementById('studioTable').rows[r].cells[5].innerHTML;
-    // alert(sName);
+    // alert(sType);
     $("#sName").val(sN);
     $("#srow").val(sRow);
     $("#scol").val(sCol);
-    $("#stype").val(sType);
+    // $("#select").find("option[value=sType]").attr("selected", true);
 
 }
 
