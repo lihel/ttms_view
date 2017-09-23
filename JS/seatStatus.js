@@ -15,8 +15,6 @@ $(document).ready(function () {
 
             'cccccccccccccc',
 
-            '______________',
-
             'cccccccccccccc',
 
             'cccccccccccccc',
