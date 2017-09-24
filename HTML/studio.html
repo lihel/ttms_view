@@ -121,8 +121,9 @@
             <div class="modal-body">
                 <div class="form-group">
                     <label for="studioName">演出厅名称</label>
-                    <input type="text" class="form-control" placeholder="演出厅名称" id="studioName">
+                    <input type="text" class="form-control" placeholder="演出厅名称" id="studioName" required="required">
                 </div>
+                <div class="pointOut">(行列值为1到100之间的整数)</div>
                 <div class="form-group">
                     <label for="row">座位行数</label>
                     <input type="text" class="form-control" placeholder="座位行数" id="row">
@@ -153,8 +154,8 @@
                 <button type="button" class="btn btn-default hwLayer-cancel" data-dismiss="modal"><i
                         class="fa fa-remove "></i>关闭
                 </button>
-                <button type="button" id="btn_submit" class="btn btn-primary hwLayer-ok" data-dismiss="modal"
-                        onclick="add()"><i
+                <button type="submit" id="btn_submit" class="btn btn-primary" data-dismiss="modal"
+                        onclick="check()"><i
                         class="fa fa-save"></i> 保存
                 </button>
             </div>
@@ -174,8 +175,10 @@
             <div class="modal-body">
                 <div class="form-group">
                     <label for="sName">演出厅名称</label>
-                    <input type="text" class="form-control" placeholder="演出厅名称" id="sName">
+                    <input type="text" class="form-control" placeholder="演出厅名称" id="sName" required="required">
                 </div>
+                <div class="pointOut">(行列值为1到100之间的整数)</div>
+
                 <div class="form-group">
                     <label for="srow">座位行数</label>
                     <input type="text" class="form-control" placeholder="座位行数" id="srow">

@@ -11,29 +11,41 @@ function getRowNumber() {
     }
     else num = 0;
 }
+function check() {
+    let flag = 0;
 
-function add() {
     let name = document.getElementById('studioName').value;
     let row = document.getElementById('row').value;
     let col = document.getElementById('col').value;
     let status = document.getElementById('studioStatus').value;
     let type = document.getElementById('studioType').value;
 
+    let p = /^[0-9]{1,2}$/;
+
+    if (p.test(row) && p.test(col)) {
+        flag = 1;
+    }
+
+    if (flag == 1) {
+        add(name, row, col, status, type);
+    }
+    else alert('not number');
+}
+function add(name, row, col, status, type) {
+
     let newRow = document.getElementById('studioTable').insertRow();
+    let arr = [];
+    for (let i = 0; i < 6; i++) {
+        arr.push(newRow.insertCell());
+    }
 
-    let studioName = newRow.insertCell();
-    let seatRow = newRow.insertCell();
-    let seatCell = newRow.insertCell();
-    let totalNumber = newRow.insertCell();
-    let studioType = newRow.insertCell();
-    let studioStatus = newRow.insertCell();
+    arr[0].innerText = name;
+    arr[1].innerText = row;
+    arr[2].innerText = col;
+    arr[3].innerText = row * col;
+    arr[4].innerText = type;
+    arr[5].innerText = status;
 
-    studioName.innerText = name;
-    seatRow.innerText = row;
-    seatCell.innerText = col;
-    studioStatus.innerText = status;
-    totalNumber.innerText = row * col;
-    studioType.innerText = type;
 }
 
 function editStudio() {
