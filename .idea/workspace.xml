@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f3be9779-e001-471c-a538-5905b41f81bf" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS/user.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JS/popDialog.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSS/index.css" afterPath="$PROJECT_DIR$/CSS/index.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HTML/studio.html" afterPath="$PROJECT_DIR$/HTML/studio.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JS/popDialog.js" afterPath="$PROJECT_DIR$/JS/popDialog.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HTML/user.html" afterPath="$PROJECT_DIR$/HTML/user.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JS/check.js" afterPath="$PROJECT_DIR$/JS/check.js" />
     </list>
     <ignored path="ttms_manager_view.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,29 +31,21 @@
       <file leaf-file-name="studio.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/HTML/studio.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="145" column="0" selection-start-line="145" selection-start-column="0" selection-end-line="145" selection-end-column="0" />
+            <state relative-caret-position="292">
+              <caret line="153" column="64" selection-start-line="153" selection-start-column="64" selection-end-line="153" selection-end-column="64" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="popDialog.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/JS/popDialog.js">
+      <file leaf-file-name="user.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/JS/user.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="seat.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/HTML/seat.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="810">
-              <caret line="45" column="47" selection-start-line="45" selection-start-column="47" selection-end-line="45" selection-end-column="47" />
-              <folding />
+            <state relative-caret-position="108">
+              <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+              <folding>
+                <element signature="e#0#37#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -58,12 +53,22 @@
       <file leaf-file-name="user.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/HTML/user.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="24" column="29" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
+            <state relative-caret-position="216">
+              <caret line="104" column="6" selection-start-line="104" selection-start-column="6" selection-end-line="104" selection-end-column="6" />
               <folding>
-                <element signature="e#2918#2925#0" expanded="true" />
-                <element signature="e#3197#3204#0" expanded="true" />
+                <element signature="e#3168#3175#0" expanded="true" />
+                <element signature="e#3447#3454#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="check.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/JS/check.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="324">
+              <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -71,8 +76,8 @@
       <file leaf-file-name="index.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CSS/index.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="52" column="19" selection-start-line="52" selection-start-column="19" selection-end-line="52" selection-end-column="19" />
+            <state relative-caret-position="186">
+              <caret line="132" column="0" selection-start-line="132" selection-start-column="0" selection-end-line="132" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -98,15 +103,16 @@
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/HTML/sign_in.html" />
         <option value="$PROJECT_DIR$/HTML/signIn.html" />
-        <option value="$PROJECT_DIR$/HTML/user.html" />
         <option value="$PROJECT_DIR$/JS/createSeat.js" />
         <option value="$PROJECT_DIR$/CSS/jq22.css" />
-        <option value="$PROJECT_DIR$/JS/check.js" />
         <option value="$PROJECT_DIR$/HTML/seat.html" />
         <option value="$PROJECT_DIR$/JS/seatStatus.js" />
-        <option value="$PROJECT_DIR$/CSS/index.css" />
-        <option value="$PROJECT_DIR$/HTML/studio.html" />
         <option value="$PROJECT_DIR$/JS/popDialog.js" />
+        <option value="$PROJECT_DIR$/CSS/index.css" />
+        <option value="$PROJECT_DIR$/JS/check.js" />
+        <option value="$PROJECT_DIR$/HTML/studio.html" />
+        <option value="$PROJECT_DIR$/HTML/user.html" />
+        <option value="$PROJECT_DIR$/JS/user.js" />
       </list>
     </option>
   </component>
@@ -291,12 +297,12 @@
       <workItem from="1505897334423" duration="9736000" />
       <workItem from="1505977598515" duration="16022000" />
       <workItem from="1506168197281" duration="7449000" />
-      <workItem from="1506213957076" duration="7043000" />
+      <workItem from="1506213957076" duration="12774000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="89444000" />
+    <option name="totallyTimeSpent" value="95175000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1301" height="744" extended-state="6" />
@@ -356,25 +362,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/HTML/user.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="24" column="29" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
-          <folding>
-            <element signature="e#2918#2925#0" expanded="true" />
-            <element signature="e#3197#3204#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CSS/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4500">
-          <caret line="250" column="14" selection-start-line="250" selection-start-column="14" selection-end-line="250" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/JS/check.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -395,8 +382,8 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#2918#2925#0" expanded="true" />
-            <element signature="e#3197#3204#0" expanded="true" />
+            <element signature="e#3168#3175#0" expanded="true" />
+            <element signature="e#3447#3454#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -437,8 +424,8 @@
         <state relative-caret-position="180">
           <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
           <folding>
-            <element signature="e#2918#2925#0" expanded="true" />
-            <element signature="e#3197#3204#0" expanded="true" />
+            <element signature="e#3168#3175#0" expanded="true" />
+            <element signature="e#3447#3454#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -479,8 +466,8 @@
         <state relative-caret-position="180">
           <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
           <folding>
-            <element signature="e#2918#2925#0" expanded="true" />
-            <element signature="e#3197#3204#0" expanded="true" />
+            <element signature="e#3168#3175#0" expanded="true" />
+            <element signature="e#3447#3454#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -639,6 +626,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
           <caret line="3" column="35" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -649,27 +637,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/JS/check.js">
+    <entry file="file://$PROJECT_DIR$/CSS/index.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HTML/user.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="24" column="29" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
-          <folding>
-            <element signature="e#2918#2925#0" expanded="true" />
-            <element signature="e#3197#3204#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="186">
+          <caret line="132" column="0" selection-start-line="132" selection-start-column="0" selection-end-line="132" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/HTML/seat.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="810">
+        <state relative-caret-position="576">
           <caret line="45" column="47" selection-start-line="45" selection-start-column="47" selection-end-line="45" selection-end-column="47" />
           <folding />
         </state>
@@ -677,32 +655,64 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/JS/seatStatus.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+        <state relative-caret-position="144">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc;n#saveSeatStatus#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CSS/index.css">
+    <entry file="file://$PROJECT_DIR$/JS/check.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="52" column="19" selection-start-line="52" selection-start-column="19" selection-end-line="52" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HTML/studio.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="145" column="0" selection-start-line="145" selection-start-column="0" selection-end-line="145" selection-end-column="0" />
+        <state relative-caret-position="324">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/JS/popDialog.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+        <state relative-caret-position="162">
+          <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HTML/studio.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="153" column="64" selection-start-line="153" selection-start-column="64" selection-end-line="153" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS/studio.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HTML/user.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="104" column="6" selection-start-line="104" selection-start-column="6" selection-end-line="104" selection-end-column="6" />
+          <folding>
+            <element signature="e#3168#3175#0" expanded="true" />
+            <element signature="e#3447#3454#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS/user.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#37#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

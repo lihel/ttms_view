@@ -2,13 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>studio</title>
+    <title>user</title>
     <link rel="stylesheet" href="../CSS/bs.css">
     <link rel="stylesheet" href="../CSS/index.css">
     <link href="../font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 
 <body>
+
+<script src="../JS/jquery.min.js"></script>
+<script src="../JS/bootstrap.min.js"></script>
+<script src="../JS/user.js"></script>
+
 <div class="header">
     <div class="row">
         <div class="font col-md-9">TTMS</div>
@@ -36,7 +41,7 @@
 
             <div class="tableUser">
 
-                <table class="table table-hover">
+                <table class="table table-hover" id="empTable" onclick="getRowNumber()">
                     <thead>
                     <tr>
                         <th>姓名</th>
@@ -44,8 +49,6 @@
                         <th>年龄</th>
                         <th>联系方式</th>
                         <th>邮箱</th>
-                        <th>编辑</th>
-
                     </tr>
                     </thead>
                     <tbody>
@@ -55,15 +58,13 @@
                         <td>24</td>
                         <td>13999999999</td>
                         <td>123123@qq.com</td>
-                        <td><input type="button" class="btn btn-primary" value="编辑"></td>
                     </tr>
                     <tr>
-                        <td>张全</td>
+                        <td>张五</td>
                         <td>女</td>
                         <td>24</td>
                         <td>18199999999</td>
-                        <td>123126663@qq.com</td>
-                        <td><input type="button" class="btn btn-primary" value="编辑"></td>
+                        <td>12312663@qq.com</td>
                     </tr>
                     <tr>
                         <td>李四</td>
@@ -71,7 +72,6 @@
                         <td>22</td>
                         <td>18188888888</td>
                         <td>12333233@qq.com</td>
-                        <td><input type="button" class="btn btn-primary" value="编辑"></td>
                     </tr>
                     <tr>
                         <td>李明</td>
@@ -79,14 +79,19 @@
                         <td>23</td>
                         <td>18088888888</td>
                         <td>123333@qq.com</td>
-                        <td><input type="button" class="btn btn-primary" value="编辑"></td>
                     </tr>
                     </tbody>
                 </table>
             </div>
-
-
-            <ul class="pagination page">
+            <p>
+                <input type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#add"
+                       value="添加员工">
+                <input type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal"
+                       value="编辑员工信息" onclick="editEmp()">
+                <input type="button" class="btn btn-danger btn-lg" data-toggle="modal"
+                       value="删除员工" onclick="del()">
+            </p>
+            <ul class="pagination">
                 <li><a href="#">&laquo;</a></li>
                 <li class="active"><a href="#">1</a></li>
                 <li><a href="#">2</a></li>
@@ -98,7 +103,89 @@
         </div>
     </div>
 </div>
+<div class="modal fade" id="add" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close hwLayer-close" data-dismiss="modal">×</button>
+                <h4 class="modal-title">添加新员工</h4>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label>姓名</label>
+                    <input type="text" class="form-control" placeholder="姓名" id="Name" required="required">
+                </div>
+                <div class="form-group">
+                    <label>性别</label>
+                    <input type="text" class="form-control" placeholder="性别，输入男或女" id="empSex">
+                </div>
+                <div class="form-group">
+                    <label>年龄</label>
+                    <input type="text" class="form-control" placeholder="年龄" id="empAge">
+                </div>
+                <div class="form-group">
+                    <label>电话号码</label>
+                    <input type="text" class="form-control" placeholder="电话号码" id="empphoneNumber">
+                </div>
+                <div class="form-group">
+                    <label>邮箱</label>
+                    <input type="text" class="form-control" placeholder="ＱＱ邮箱" id="empEmail">
+                </div>
 
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default hwLayer-cancel" data-dismiss="modal"><i
+                        class="fa fa-remove "></i>关闭
+                </button>
+                <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="check()"><i
+                        class="fa fa-save"></i> 保存
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close hwLayer-close" data-dismiss="modal">×</button>
+                <h4 class="modal-title">编辑员工信息</h4>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label for="userName">姓名</label>
+                    <input type="text" class="form-control" placeholder="姓名" id="userName" required="required">
+                </div>
+                <div class="form-group">
+                    <label>性别</label>
+                    <input type="text" class="form-control" placeholder="性别，输入男或女" id="sex">
+                </div>
+                <div class="form-group">
+                    <label>年龄</label>
+                    <input type="text" class="form-control" placeholder="年龄" id="age">
+                </div>
+                <div class="form-group">
+                    <label>电话号码</label>
+                    <input type="text" class="form-control" placeholder="电话号码" id="phoneNumber">
+                </div>
+                <div class="form-group">
+                    <label>邮箱</label>
+                    <input type="text" class="form-control" placeholder="ＱＱ邮箱" id="email">
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default hwLayer-cancel" data-dismiss="modal"><i
+                        class="fa fa-remove "></i>关闭
+                </button>
+                <button type="button" class="btn btn-primary hwLayer-ok" data-dismiss="modal"><i
+                        class="fa fa-save"></i> 保存
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
 
 </body>
 </html>

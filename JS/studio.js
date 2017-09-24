@@ -11,6 +11,7 @@ function getRowNumber() {
     }
     else num = 0;
 }
+
 function check() {
     let flag = 0;
 
