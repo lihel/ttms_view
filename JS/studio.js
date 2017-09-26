@@ -8,6 +8,7 @@ function getRowNumber() {
     if (event.srcElement.tagName == 'TD') {
         let row = event.srcElement.parentElement;
         num = row.rowIndex;
+        row.setAttribute('class','active');
     }
     else num = 0;
 }
@@ -62,8 +63,11 @@ function editStudio() {
     $("#srow").val(arr[1]);
     $("#scol").val(arr[2]);
     // $("#select").find("option[value=sType]").attr("selected", true);
-}
 
+}
+function retu() {
+    num.setAttribute('class','default');
+}
 function del() {
     let row = num;
     if (row == 0)

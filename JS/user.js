@@ -12,6 +12,16 @@ function getRowNumber() {
     else rowNum = 0;
 }
 
+function checkNum() {
+    let num = document.getElementById('Num');
+    let c = /^[a-zA-Z0-9]{6,20}$/;
+
+    if (c.test(num)) {
+        return true;
+    }
+    else alert('请输入正确编号！');
+}
+
 function check() {
     let flag = 0;
 
@@ -24,7 +34,7 @@ function check() {
     let page = /^[0-9]{1,2}$/;
     let psex = /^男|女$/;
 
-    if (page.test(age)&&psex.test(sex)) {
+    if (page.test(age) && psex.test(sex)) {
         flag = 1;
     }
 
