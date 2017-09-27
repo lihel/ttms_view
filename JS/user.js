@@ -4,16 +4,34 @@
 
 let rowNum = 0;
 
-function getRowNumber() {
-    if (event.srcElement.tagName == 'TD') {
-        let row = event.srcElement.parentElement;
-        rowNum = row.rowIndex;
-    }
-    else rowNum = 0;
-}
+function userRow(obj) {
+    let table = document.getElementById('empTable');
+    let length = table.rows.length;
 
+    for(let i = 0;i<length;i++){
+        let row = table.rows[i];
+        row.setAttribute('class','default');
+    }
+
+    if(event.srcElement.tagName == 'TD'){
+        let number = 0;
+        let curRow = event.srcElement.parentElement;
+
+        if(curRow.rowIndex == 0){
+            // curRow.setAttribute('class','warning');
+            return 0;
+        }
+        else{
+            curRow.setAttribute('class','info');
+            number = curRow.rowIndex ;
+            console.log(number);
+            num = number;
+        }
+    }
+
+}
 function checkNum() {
-    let num = document.getElementById('Num');
+    let num = document.getElementById('Num').value;
     let c = /^[a-zA-Z0-9]{6,20}$/;
 
     if (c.test(num)) {

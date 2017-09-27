@@ -7,12 +7,15 @@ let user = "root", password = "123456";
 let checkUser = ()=> {
     let userName = document.getElementById('user').value;
     let passwordValue = document.getElementById('password').value;
-    if (userName === user && passwordValue === password) {
-        self.location='studio.html'; //重定向
+    if (userName == user && passwordValue == password) {
+        // self.location='studio.html'; //重定向
+        return true;
     }
     else {
+
         alert('登陆失败！请检查用户名和密码');
-        self.location='signIn.html';
+        return false;
+        // self.location='signIn.html';
     }
 }
 

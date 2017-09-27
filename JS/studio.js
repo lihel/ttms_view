@@ -4,14 +4,32 @@
 
 let num = 0;
 
-function getRowNumber() {
-    if (event.srcElement.tagName == 'TD') {
-        let row = event.srcElement.parentElement;
-        num = row.rowIndex;
-        row.setAttribute('class','active');
+function studioRow(obj) {
+    let table = document.getElementById('studioTable');
+    let length = table.rows.length;
+
+    for(let i = 0;i<length;i++){
+        let row = table.rows[i];
+        row.setAttribute('class','default');
     }
-    else num = 0;
+
+    if(event.srcElement.tagName == 'TD'){
+        let number = 0;
+        let curRow = event.srcElement.parentElement;
+
+        if(curRow.rowIndex == 0){
+            return 0;
+        }
+        else{
+            curRow.setAttribute('class','info');
+            number = curRow.rowIndex ;
+            console.log(number);
+            num = number;
+        }
+    }
+
 }
+
 
 function check() {
     let flag = 0;
@@ -31,7 +49,7 @@ function check() {
     if (flag == 1) {
         add(name, row, col, status, type);
     }
-    else alert('not number');
+    else alert('请输入数字');
 }
 function add(name, row, col, status, type) {
 
@@ -47,7 +65,6 @@ function add(name, row, col, status, type) {
     arr[3].innerText = row * col;
     arr[4].innerText = type;
     arr[5].innerText = status;
-
 }
 
 function editStudio() {

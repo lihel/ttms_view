@@ -2,8 +2,14 @@
     margin-top: 30%;
     border: solid 1px #9d9d9d;
     border-radius: 20%;
+    background-color: rgba(139, 135, 157, 0.42);
 }
-
+body{
+    background-image: url(../images/background.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
 .container {
     width: 35%;
 }
@@ -43,6 +49,8 @@
     margin-left: 25%;
     border-radius: 15px;
     width: 30%;
+    outline: none;
+    padding-left: 8px;
 }
 
 .tableLoaction {
