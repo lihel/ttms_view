@@ -96,15 +96,15 @@
                 <input type="button" class="btn btn-danger btn-lg" data-toggle="modal"
                        value="删除员工" onclick="del()">
             </p>
-            <ul class="pagination">
-                <li><a href="#">&laquo;</a></li>
-                <li class="active"><a href="#">1</a></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><a href="#">4</a></li>
-                <li><a href="#">5</a></li>
-                <li><a href="#">&raquo;</a></li>
-            </ul>
+            <!-- <ul class="pagination">
+                 <li><a href="#">&laquo;</a></li>
+                 <li class="active"><a href="#">1</a></li>
+                 <li><a href="#">2</a></li>
+                 <li><a href="#">3</a></li>
+                 <li><a href="#">4</a></li>
+                 <li><a href="#">5</a></li>
+                 <li><a href="#">&raquo;</a></li>
+             </ul>-->
         </div>
     </div>
 </div>
@@ -120,26 +120,39 @@
                     <label>员工编号</label>
                     <input type="text" class="form-control" placeholder="员工编号" id="Num" required="required"
                            onblur="checkNum()">
+                    <div id="uNumber"></div>
                 </div>
+
                 <div class="form-group">
                     <label>姓名</label>
-                    <input type="text" class="form-control" placeholder="姓名" id="Name" required="required">
+                    <input type="text" class="form-control" placeholder="姓名" id="Name" required="required"
+                           onblur="checkName()">
+                    <div id="uName"></div>
                 </div>
                 <div class="form-group">
                     <label>性别</label>
-                    <input type="text" class="form-control" placeholder="性别，输入男或女" id="empSex">
+                    <input type="text" class="form-control" placeholder="性别，输入男或女" id="empSex"
+                           onblur="checkSex()">
+                    <div id="uSex"></div>
                 </div>
                 <div class="form-group">
                     <label>年龄</label>
-                    <input type="text" class="form-control" placeholder="年龄" id="empAge">
+                    <input type="text" class="form-control" placeholder="年龄" id="empAge" onblur="checkAge()">
+                    <div id="uAge"></div>
                 </div>
+
                 <div class="form-group">
                     <label>电话号码</label>
-                    <input type="text" class="form-control" placeholder="电话号码" id="empphoneNumber">
+                    <input type="text" class="form-control" placeholder="电话号码" id="empphoneNumber"
+                           onblur="checkPhoneNumber()">
+                    <div id="uPhoneNumber"></div>
                 </div>
+
                 <div class="form-group">
                     <label>邮箱</label>
-                    <input type="text" class="form-control" placeholder="ＱＱ邮箱" id="empEmail">
+                    <input type="text" class="form-control" placeholder="ＱＱ邮箱" id="empEmail"
+                           onblur="checkEmail()">
+                    <div id="uEmail"></div>
                 </div>
 
             </div>
@@ -166,6 +179,7 @@
                 <div class="form-group">
                     <label for="userName">员工编号</label>
                     <input type="text" class="form-control" placeholder="员工编号" id="userNum" required="required">
+
                 </div>
                 <div class="form-group">
                     <label for="userName">姓名</label>

@@ -8,21 +8,21 @@ function studioRow(obj) {
     let table = document.getElementById('studioTable');
     let length = table.rows.length;
 
-    for(let i = 0;i<length;i++){
+    for (let i = 0; i < length; i++) {
         let row = table.rows[i];
-        row.setAttribute('class','default');
+        row.setAttribute('class', 'default');
     }
 
-    if(event.srcElement.tagName == 'TD'){
+    if (event.srcElement.tagName == 'TD') {
         let number = 0;
         let curRow = event.srcElement.parentElement;
 
-        if(curRow.rowIndex == 0){
+        if (curRow.rowIndex == 0) {
             return 0;
         }
-        else{
-            curRow.setAttribute('class','info');
-            number = curRow.rowIndex ;
+        else {
+            curRow.setAttribute('class', 'info');
+            number = curRow.rowIndex;
             console.log(number);
             num = number;
         }
@@ -40,7 +40,7 @@ function check() {
     let status = document.getElementById('studioStatus').value;
     let type = document.getElementById('studioType').value;
 
-    let p = /^[0-9]{1,2}$/;
+    let p = /^[1-9]{1,2}$/;
 
     if (p.test(row) && p.test(col)) {
         flag = 1;
@@ -49,8 +49,9 @@ function check() {
     if (flag == 1) {
         add(name, row, col, status, type);
     }
-    else alert('请输入数字');
+    else alert('座位行列为1-100间的数字！');
 }
+
 function add(name, row, col, status, type) {
 
     let newRow = document.getElementById('studioTable').insertRow();
@@ -82,9 +83,7 @@ function editStudio() {
     // $("#select").find("option[value=sType]").attr("selected", true);
 
 }
-function retu() {
-    num.setAttribute('class','default');
-}
+
 function del() {
     let row = num;
     if (row == 0)

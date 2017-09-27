@@ -8,14 +8,13 @@ let checkUser = ()=> {
     let userName = document.getElementById('user').value;
     let passwordValue = document.getElementById('password').value;
     if (userName == user && passwordValue == password) {
-        // self.location='studio.html'; //重定向
         return true;
     }
     else {
 
         alert('登陆失败！请检查用户名和密码');
         return false;
-        // self.location='signIn.html';
+
     }
 }
 
