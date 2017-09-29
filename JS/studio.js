@@ -49,6 +49,7 @@ function check() {
     if (flag == 1) {
         add(name, row, col, status, type);
     }
+
     else alert('座位行列为1-100间的数字！');
 }
 

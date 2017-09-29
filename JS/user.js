@@ -38,7 +38,10 @@ function checkNum() {
         $('#uNumber').html("");
         return true;
     }
-    else $('#uNumber').html('<label style="color: red">(请输入6-12位字母或数字)</label>');
+    else {
+        $('#uNumber').html('<label style="color: red">(请输入6-12位字母或数字)</label>');
+        return false;
+    }
 }
 
 function checkName() {
@@ -47,8 +50,12 @@ function checkName() {
 
     if (c.test(name)) {
         document.getElementById('uName').innerHTML = '';
+        return true;
     }
-    else document.getElementById('uName').innerHTML = '<label style="color: red">(请输入2-10个汉字)</label>';
+    else {
+        document.getElementById('uName').innerHTML = '<label style="color: red">(请输入2-10个汉字)</label>';
+        return false;
+    }
 }
 
 function checkSex() {
@@ -57,8 +64,12 @@ function checkSex() {
 
     if (psex.test(sex)) {
         document.getElementById('uSex').innerHTML = '';
+        return true;
     }
-    else document.getElementById('uSex').innerHTML = '<label style="color: red">(请输入男或女)</label>';
+    else {
+        document.getElementById('uSex').innerHTML = '<label style="color: red">(请输入男或女)</label>';
+        return false;
+    }
 }
 
 function checkAge() {
@@ -67,8 +78,12 @@ function checkAge() {
 
     if (page.test(age)) {
         document.getElementById('uAge').innerHTML = '';
+        return true;
     }
-    else document.getElementById('uAge').innerHTML = '<label style="color: red">(年龄20-99岁之间)</label>';
+    else {
+        document.getElementById('uAge').innerHTML = '<label style="color: red">(年龄20-99岁之间)</label>';
+        return false;
+    }
 }
 
 function checkPhoneNumber() {
@@ -80,7 +95,7 @@ function checkPhoneNumber() {
         return true;
     }
     else {
-        $('uPhoneNumber').html('<label style="color: red">(请输入正确的电话号码)</label>');
+        document.getElementById('uPhoneNumber').innerHTML = '<label style="color: red">(请输入正确的电话号码)</label>';
         return false;
     }
 }
@@ -94,43 +109,43 @@ function checkEmail() {
         return true;
     }
     else {
-        $('#uEmail').html('<label style="color: red">(请输入正确的邮箱地址)</label>');
+        $('uEmail').html('<label style="color: red">(请输入正确的邮箱地址)</label>');
         return false;
     }
 }
 
 function check() {
     let flag = 0;
-
-     let name = document.getElementById('Name').value;
-     let sex = document.getElementById('empSex').value;
-     let age = document.getElementById('empAge').value;
-     let phoneNum = document.getElementById('empphoneNumber').value;
-     let email = document.getElementById('empEmail').value;
+    let number = document.getElementById('Num').value;
+    let name = document.getElementById('Name').value;
+    let sex = document.getElementById('empSex').value;
+    let age = document.getElementById('empAge').value;
+    let phoneNum = document.getElementById('empphoneNumber').value;
+    let email = document.getElementById('empEmail').value;
 
     if (checkNum() && checkName() && checkSex() && checkAge() && checkPhoneNumber() && checkEmail()) {
         flag = 1;
     }
 
     if (flag == 1) {
-        add(name, sex, age, phoneNum, email);
+        add(number, name, sex, age, phoneNum, email);
     }
-    else alert('not number');
 }
 
-function add(name, sex, age, phoneNum, email) {
+function add(number, name, sex, age, phoneNum, email) {
 
     let newRow = document.getElementById('empTable').insertRow();
+    let length = document.getElementById('empTable').rows.length;
     let arr = [];
-    for (let i = 0; i < 5; i++) {
+    for (let i = 0; i < length; i++) {
         arr.push(newRow.insertCell());
     }
-
-    arr[0].innerText = name;
-    arr[1].innerText = sex;
-    arr[2].innerText = age;
-    arr[3].innerText = phoneNum;
-    arr[4].innerText = email;
+    arr[0].innerText = number;
+    arr[1].innerText = name;
+    arr[2].innerText = sex;
+    arr[3].innerText = age;
+    arr[4].innerText = phoneNum;
+    arr[5].innerText = email;
 
 }
 

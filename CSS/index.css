@@ -239,11 +239,13 @@ ul.seatCharts-legendList {
     width: 90px;
     margin-top: 10px;
     line-height: 2;
+    list-style: none;
 }
 
 span.seatCharts-legendDescription {
     margin-left: 5px;
     line-height: 30px;
+    color: #FFFFFF;
 }
 
 .checkout-button {
